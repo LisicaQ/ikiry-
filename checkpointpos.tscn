@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://checkpointpos.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/oncheckpoint.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/offcheckpoint.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 112 )
+
+[node name="checkpointpos" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -96 )
+shape = SubResource( 1 )
+
+[node name="Offcheckpoint" type="Sprite" parent="."]
+position = Vector2( 0, 16 )
+texture = ExtResource( 3 )
+
+[node name="Oncheckpoint" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, 16 )
+texture = ExtResource( 2 )
+
+[connection signal="body_entered" from="." to="." method="_on_checkpointpos_body_entered"]

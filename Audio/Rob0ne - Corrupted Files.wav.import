@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Rob0ne - Corrupted Files.wav-ed0deb5ceb94b5ef3def411c7016d361.sample"
+
+[deps]
+
+source_file="res://Audio/Rob0ne - Corrupted Files.wav"
+dest_files=[ "res://.import/Rob0ne - Corrupted Files.wav-ed0deb5ceb94b5ef3def411c7016d361.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
